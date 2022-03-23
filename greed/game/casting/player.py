@@ -1,4 +1,4 @@
-from game.common.location import Location
+from common.location import Location
 
 class Player:
     
