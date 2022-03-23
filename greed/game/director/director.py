@@ -24,8 +24,11 @@ class Director:
         player.move_x(velocity)
         pass
 
-    def _do_updates(self):
+    def _do_updates(self, cast):
         self._cast.create_stones(STONES_PER_FRAME)
 
-    def _do_outputs(self):
-        pass
+    def _do_outputs(self, cast):
+        self._video_service.clear_buffer()
+        actors = cast.get_all_actors()
+        self._video_service.draw_actors(actors)
+        self._video_service.flush_buffer()
