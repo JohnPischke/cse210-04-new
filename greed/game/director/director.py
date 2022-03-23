@@ -21,7 +21,7 @@ class Director:
     def _get_inputs(self):
         player = self._cast.player
         velocity = self._keyboard_service.get_direction()
-        player.set_velocity(velocity)
+        player.move(velocity)
         pass
 
     def _do_updates(self):
