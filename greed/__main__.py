@@ -23,10 +23,10 @@ def main():
     player = Player(x, y)
     cast.set_player(player)
 
-   # keyboard_service = Keyboard_Service(CELL_SIZE)
+    #keyboard_service = Keyboard_Service(CELL_SIZE)
     video_service = Video_Service(CAPTION, MAX_X, MAX_Y, CELL_SIZE, FRAME_RATE)
-    director = Director(keyboard_service, video_service)
-    director.start_game(cast)
+    #director = Director(keyboard_service, video_service)
+    #director.start_game(cast)
 
 
 if __name__ == '__main__':

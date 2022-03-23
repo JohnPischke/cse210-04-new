@@ -2,8 +2,13 @@ import pyray
 
 class Video_Service:
     
-    def __init__(self):
-        pass
+    def __init__(self, caption, width, height, cell_size, frame_rate, debug = False):
+        self._caption = caption
+        self._width = width
+        self._height = height
+        self._cell_size = cell_size
+        self._frame_rate = frame_rate
+        self._debug = debug
 
     def close_window(self):
         """Closes the window and releases all computing resources."""
