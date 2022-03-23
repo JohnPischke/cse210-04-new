@@ -11,7 +11,7 @@ class Falling_Object:
         self.symbol = 1
 
     def fall(self):
-        self.location = Location.move(self.velocity, 0)
+        self.location = Location.move(0, self.velocity)
         pass
 
     def delete(self):
