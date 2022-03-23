@@ -7,10 +7,11 @@ class Falling_Object:
     def __init__(self):
         self.location = Location(random.randint(0,900), 600)
         self.points = Points()
-        self.velocity = 1
+        self.velocity = -1
         self.symbol = 1
 
     def fall(self):
+        self.location = Location.move(self.velocity, 0)
         pass
 
     def delete(self):
