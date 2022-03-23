@@ -1,5 +1,5 @@
 from game.casting.stone import Stone
-from player import Player
+from game.casting.player import Player
 
 class Cast:
     
