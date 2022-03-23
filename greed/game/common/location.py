@@ -1,9 +1,10 @@
+import random
 
 class Location:
     
     def __init__(self, x, y):
-        self._point_x = x
-        self._point_y = y
+        self._point_x = random.randint(0,900)
+        self._point_y = 600
 
     def move(self, x, y):
         self._point_x += x
