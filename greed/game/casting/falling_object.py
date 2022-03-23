@@ -16,3 +16,5 @@ class Falling_Object:
 
     def delete(self):
         pass
+
+    #font size
