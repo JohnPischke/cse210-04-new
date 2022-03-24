@@ -20,7 +20,7 @@ def main():
     
     x = int(MAX_X / 2)
     y = int(MAX_Y / 2)
-    player = Player(0, 0)
+    player = Player(x, 560)
     cast.set_player(player)
 
     keyboard_service = Keyboard_Service(CELL_SIZE)

@@ -7,7 +7,7 @@ class Cast:
     
     def __init__(self):
         self.falling_objects = []
-        self.player = Player(0,0)
+        self.player = Player(500,600)
         self.points_total = 0
         
 

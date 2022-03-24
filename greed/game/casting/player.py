@@ -5,8 +5,9 @@ class Player:
     def __init__(self, x, y):
         self._location = Location(x, y)
         self._symbol = "#"
-        self._text_size = 1
-        self._color = 3
+        self._text_size = 50
+        self._color = (0,255,255)
+        
 
     def get_x(self):
         return self._location.get_x()
