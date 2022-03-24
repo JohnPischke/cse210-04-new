@@ -15,8 +15,8 @@ class Director:
         self._video_service.open_window()
         while self._video_service.is_window_open():
             self._get_inputs()
-            self._do_updates(self._cast)
-            self._do_outputs(self._cast)
+            self._do_updates()
+            self._do_outputs()
         self._video_service.close_window()
 
     def _get_inputs(self):
@@ -25,12 +25,16 @@ class Director:
         player.move_x(velocity)
         pass
 
-    def _do_updates(self, cast):
+    def _do_updates(self):
         self._cast.create_stones(STONES_PER_FRAME)
+        self._cast.compare()
 
-    def _do_outputs(self, cast):
+    def _do_outputs(self):
         self._video_service.clear_buffer()
-      #  actors = cast.get_cast()
-      #  player = cast.get_player()
+        actors = self._cast.get_cast()
+        for actor in actors:
+            print (actor.symbol)
+            print (len(actors))
+        player = self._cast.get_player()
        # self._video_service.draw_actors(actors)
         self._video_service.flush_buffer()

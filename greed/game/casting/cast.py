@@ -8,20 +8,22 @@ class Cast:
     def __init__(self):
         self.falling_objects = []
         self.player = Player(0,0)
+        self.points_total = 0
         
 
-    def compare_locations(self):
+    def compare(self):
         for object in self.falling_objects:
-            if self.falling_objects[object.location.get_y()] == self.player.location.get_y():
-                pass
+            object_y = object.location.get_y()
+            if object_y == self.player.get_y():
+                print("compare")
 
 
     def create_stones(self, number):
-        x = random.uniform(0,1)
         for _ in range(number):
+            x = random.randint(0,1)
             if x == 0:
                 new_stone = Stone()
-            else:
+            if x == 1:
                 new_stone = Gem()
             self.falling_objects.append(new_stone)
 
