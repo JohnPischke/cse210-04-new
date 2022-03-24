@@ -21,6 +21,8 @@ Things that need to be done in ther order they need to be done:
     Parts of video_service.py
     Parts of directory.py
 
+    
+
 
 
 

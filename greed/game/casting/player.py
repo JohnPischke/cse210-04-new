@@ -8,3 +8,5 @@ class Player:
 
     def move_x(self, value):
         self._location.move(value.get_x(),0)
+
+    
