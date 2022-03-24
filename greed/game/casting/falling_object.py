@@ -5,14 +5,15 @@ from game.common.points import Points
 class Falling_Object:
     
     def __init__(self):
-        self.location = Location(random.randint(0,900), 600)
+        self.location = Location(random.randint(0,900), 0)
         self.points = 0
-        self.velocity = -1
+        self.velocity = 10
         self.symbol = 1
-        self.text_size = 1
+        self.text_size = 50
+        self.color = (0,0,0)
 
-    def fall(self):
-        self.location = Location.move(0, self.velocity)
+    def fall_down(self):
+        self.location.move(0,self.velocity) 
         pass
 
     def get_x(self):
@@ -29,6 +30,9 @@ class Falling_Object:
     
     def get_points(self):
         return self.points
+
+    def get_color(self):
+        return self.color
 
     
 

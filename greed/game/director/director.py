@@ -1,4 +1,5 @@
-STONES_PER_FRAME = 2
+STONES_PER_FRAME = 1
+import pyray
 
 class Director:
     
@@ -20,25 +21,21 @@ class Director:
         self._video_service.close_window()
 
     def _get_inputs(self):
-        print("inputs")
         player = self._cast.player
         velocity = self._keyboard_service.get_direction()
         player.move_x(velocity)
         pass
 
     def _do_updates(self):
-        print("updates")
+        self._cast.fall()
         self._cast.create_stones(STONES_PER_FRAME)
         self._cast.compare()
 
     def _do_outputs(self):
-        print("outputs")
         self._video_service.clear_buffer()
         actors = self._cast.get_cast()
-        for actor in actors:
-            print (actor.get_symbol())
-            print (len(actors))
         player = self._cast.get_player()
         self._video_service.draw_actor(player)
-       # self._video_service.draw_actors(actors)
+        self._video_service.draw_actors(actors)
+        pyray.draw_text(str(self._cast.points_total), 25, 25, 30, (252,252,252))
         self._video_service.flush_buffer()

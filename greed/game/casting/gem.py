@@ -4,7 +4,7 @@ class Gem(Falling_Object):
     
     def __init__(self):
         super().__init__()
-        self.color = (2,2,2)
+        self.color = (0,238,0)
         self.points = 1
         self.symbol = "*"
        
