@@ -6,7 +6,8 @@ class Gem(Falling_Object):
         super().__init__()
         self.color = 1
         self.points = 1
-        self.symbol = "@"
+        self.symbol = "*"
+       
 
     def update(self):
         pass

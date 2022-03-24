@@ -6,7 +6,7 @@ class Stone(Falling_Object):
         super().__init__()
         self.color = 1
         self.points = 1
-        self.symbol = "*"
+        self.symbol = "O"
 
     def update(self):
         pass
