@@ -1,0 +1,21 @@
+Things that need to be done in ther order they need to be done: 
+
+!!Get window that everything will be displayed on up and running:!!
+    video_service.py Done at same time(@1)
+    
+    parts of directory.py Done at same time(@2)
+
+!!Get cast to display the cast on the window!!
+    location.py
+
+        falling_object.py Done at same time(*1) 
+
+            stone.py
+
+        keyboard_service.py Done at same time(*2)
+
+            player.py
+
+        cast.py
+
+
