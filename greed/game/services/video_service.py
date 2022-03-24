@@ -52,3 +52,25 @@ class Video_Service:
             pyray.draw_line(0, y, self._width, y, pyray.GRAY)
         for x in range(0, self._width, self._cell_size):
             pyray.draw_line(x, 0, x, self._height, pyray.GRAY)
+            
+    def draw_actor(self, actor):
+        """Draws the given actor's text on the screen.
+
+        Args:
+            actor (Actor): The actor to draw.
+        """ 
+        text = actor.get_text()
+        x = actor.get_position().get_x()
+        y = actor.get_position().get_y()
+        font_size = actor.get_font_size()
+        color = actor.get_color().to_tuple()
+        pyray.draw_text(text, x, y, font_size, color)
+        
+    def draw_actors(self, actors):
+        """Draws the text for the given list of actors on the screen.
+
+        Args:
+            actors (list): A list of actors to draw.
+        """ 
+        for actor in actors:
+            self.draw_actor(actor)

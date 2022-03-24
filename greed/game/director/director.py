@@ -5,6 +5,7 @@ class Director:
     def __init__(self, keyboard_service, video_service):
         self._keyboard_service = keyboard_service
         self._video_service = video_service
+        self._cast = ""
 
     def start_game(self, cast):
         self._cast = cast
@@ -14,8 +15,8 @@ class Director:
         self._video_service.open_window()
         while self._video_service.is_window_open():
             self._get_inputs()
-            self._do_updates()
-            self._do_outputs()
+            self._do_updates(self._cast)
+            self._do_outputs(self._cast)
         self._video_service.close_window()
 
     def _get_inputs(self):
@@ -29,6 +30,6 @@ class Director:
 
     def _do_outputs(self, cast):
         self._video_service.clear_buffer()
-        actors = cast.get_all_actors()
-        self._video_service.draw_actors(actors)
+      #  actors = cast.get_all_actors()
+       # self._video_service.draw_actors(actors)
         self._video_service.flush_buffer()
