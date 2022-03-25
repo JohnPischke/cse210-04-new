@@ -3,6 +3,14 @@ from game.casting.gem import Gem
 from game.casting.player import Player
 import random
 
+ 
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
 class Cast:
     
     def __init__(self):

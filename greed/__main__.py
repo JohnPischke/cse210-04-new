@@ -1,3 +1,12 @@
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
+
+
 from game.director.director import Director
 from game.casting.cast import Cast
 from game.services.keyboard_service import Keyboard_Service

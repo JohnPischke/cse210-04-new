@@ -2,6 +2,14 @@ import random
 from game.common.location import Location
 from game.common.points import Points
 
+ 
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
 class Falling_Object:
     
     def __init__(self):
