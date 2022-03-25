@@ -1,5 +1,21 @@
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
+
 import random
 from game.common.location import Location
+
+ 
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
 
 class Falling_Object:
     

@@ -1,3 +1,10 @@
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
 import random
 
 class Location:

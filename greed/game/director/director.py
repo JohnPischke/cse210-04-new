@@ -1,3 +1,11 @@
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
+
 STONES_PER_FRAME = 1
 import pyray
 
