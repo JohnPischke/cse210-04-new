@@ -8,7 +8,6 @@
 
 import random
 from game.common.location import Location
-from game.common.points import Points
 
 
 class Falling_Object:
