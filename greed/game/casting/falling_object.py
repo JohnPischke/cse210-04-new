@@ -1,3 +1,11 @@
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
+
 import random
 from game.common.location import Location
 from game.common.points import Points

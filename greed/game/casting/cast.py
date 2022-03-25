@@ -1,3 +1,11 @@
+
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+
+
+
 from game.casting.stone import Stone
 from game.casting.gem import Gem
 from game.casting.player import Player
@@ -5,10 +13,7 @@ import random
 
  
 
-# Names of People in Group: 
-# Dawson Packer
-# John Pischke
-# Logan Crossley
+
 
 
 class Cast:
